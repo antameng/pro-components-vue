@@ -1,5 +1,12 @@
-import AmTable from './src/components/BasicTable/index.vue'
+import type { App, Plugin } from 'vue'
+import { withInstaller } from '../utils/install'
+import BasicTable from './src/components/BasicTable/index.vue'
 
-export {
-  AmTable,
-}
+const AmTable = withInstaller(BasicTable)
+
+export { AmTable }
+export default {
+  install: (app: App) => {
+    app.use(AmTable)
+  },
+} as Plugin
