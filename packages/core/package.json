@@ -1,0 +1,27 @@
+{
+  "name": "pro-components-vue",
+  "version": "1.0.2",
+  "description": "二次封装的ant-design-vue组件库",
+  "author": "aimeng",
+  "license": "ISC",
+  "keywords": [],
+  "main": "src/index.ts",
+  "module": "dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build --config vite.config.ts"
+  },
+  "peerDependencies": {
+    "ant-design-vue": "^4.2.6",
+    "vue": "^3.5.13"
+  },
+  "dependencies": {
+    "@am/components": "workspace:*",
+    "lodash-es": "^4.17.21"
+  },
+  "bundleDependencies": [
+    "@am/components"
+  ]
+}

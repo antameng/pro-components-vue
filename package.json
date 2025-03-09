@@ -1,21 +1,21 @@
 {
-  "name": "pro-components-vue",
+  "name": "@pro-components-vue/workspace",
   "version": "0.0.0",
   "description": "",
   "author": "",
   "license": "ISC",
   "keywords": [],
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "dev": "pnpm -F @am/examples dev",
-    "build":"pnpm"
-
+    "build": "pnpm -F pro-components-vue build"
   },
   "dependencies": {
     "@am/examples": "workspace:*",
     "@am/packages": "workspace:*",
     "@ant-design/icons-vue": "^7.0.1",
     "ant-design-vue": "^4.2.6",
+    "pro-components-vue": "workspace:*",
     "lodash-es": "^4.17.21",
     "vue": "^3.5.13"
   },

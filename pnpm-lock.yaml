@@ -23,6 +23,9 @@ importers:
       lodash-es:
         specifier: ^4.17.21
         version: 4.17.21
+      pro-components-vue:
+        specifier: workspace:*
+        version: link:packages/core
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.3)
@@ -77,6 +80,25 @@ importers:
         version: 0.7.0(typescript@5.7.3)(vue@3.5.13(typescript@5.7.3))
 
   packages: {}
+
+  packages/components: {}
+
+  packages/core:
+    dependencies:
+      '@am/components':
+        specifier: workspace:*
+        version: link:../components
+      ant-design-vue:
+        specifier: ^4.2.6
+        version: 4.2.6(vue@3.5.13(typescript@5.7.3))
+      lodash-es:
+        specifier: ^4.17.21
+        version: 4.17.21
+      vue:
+        specifier: ^3.5.13
+        version: 3.5.13(typescript@5.7.3)
+
+  packages/utils: {}
 
 packages:
 
