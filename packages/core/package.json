@@ -22,7 +22,7 @@
   "scripts": {
     "build:es": "vite build --config vite.es.config.ts",
     "build:umd": "vite build --config vite.umd.config.ts",
-    "clean": "rimraf dist",
+    "clean": "rimraf dist"
   },
   "peerDependencies": {
     "ant-design-vue": "^4.2.6",
